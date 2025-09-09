@@ -9,7 +9,14 @@ on:
       - main
 
 jobs:
-  terraform:
+  format:
+    name: 'terraform-format'
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Hello Terraform!"
+      - run: echo "Hello Terraform Format!"
+  
+  validate:
+    name: 'terraform-validate'
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "Hello Terraform Validate!"
