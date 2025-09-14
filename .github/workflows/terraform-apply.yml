@@ -17,4 +17,4 @@ jobs:
 
     steps:
     - name: 'terraform-apply'
-      run: echo "Hello Terraform Apply!"
+      run: terraform apply
